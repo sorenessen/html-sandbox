@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Columns</title>
+	<style>
+		article{
+			column-count:3;
+			column-gap:40px;
+		/*	column-rule-style: solid;
+			column-rule-width: 1px;
+			column-rule-color: coral;*/
+			column-rule: 1px solid coral;
+		}
+
+		article h1{
+			column-span:all;
+		}
+
+		.textbox1{
+			border:2px solid;
+			padding:20px;
+			width:300px;
+			overflow:auto;
+			resize:both;
+		}
+
+		.textbox2{
+			margin:20px;
+			padding:10px;
+			width:300px;
+			height:100px;
+			border:1px solid black;
+			outline: 1px solid red;
+			outline-offset: 10px;
+		}
+
+		.flex-container{
+			display:flex;
+/*			flex-direction:row-reverse;*/
+/*			flex-direction:column;*/
+			justify-content: space-around;
+			width: 400px;
+			height: 250px;
+			background-color: #000000;
+		}
+
+		.flex-item{
+			background-color: lightblue;
+			width:100px;
+			height:100px;
+			margin:10px;
+		}
+
+		.first{
+			order:-1;
+		}
+	</style>
+</head>
+<body>
+	<article>
+		<h1>Article Title</h1>
+		Fusce a sagittis magna. Nulla lobortis lacus nulla, sit amet sollicitudin est tincidunt et. Pellentesque accumsan enim nec est ornare mattis in quis lorem. Proin et laoreet nibh. Duis convallis sodales velit, non faucibus dolor consectetur a. Pellentesque et sollicitudin velit. Morbi non erat interdum, tincidunt lacus at, tristique enim. Vestibulum vitae dignissim tellus, vel interdum lacus. Vivamus commodo turpis a lorem faucibus porttitor. In et arcu congue, feugiat quam at, luctus nisi. Cras feugiat aliquam dictum. Quisque vestibulum dapibus ante, non bibendum nibh ultrices gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat semper leo vitae suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	</article>
+
+	<br>
+
+	<div class="textbox1">Try and resize this element</div>
+	<div class="textbox2">This element has a 10 pixel outline</div>
+
+	<div class="flex-container">
+		<div class="flex-item">flex item 1</div>
+		<div class="flex-item first">flex item 2</div>
+		<div class="flex-item">flex item 3</div>
+	</div>
+
+</body>
+</html>
